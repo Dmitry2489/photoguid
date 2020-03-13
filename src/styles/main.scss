@@ -1,0 +1,212 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "vendor/libs";
+@import "base/fonts";
+@import "base/normalize.scss";
+@import "base/general";
+@import "../blocks/modules";
+
+// BEGIN HEADER
+.header {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__parallax-background {
+  background: url(./../img/bg-header.jpg) center no-repeat;
+  background-size: cover;
+  height: 105%;
+  width: 105%;
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  z-index: -1;
+}
+.header__top {
+  width: 100%;
+  padding: 18px 70px;
+  background-color: rgba($color: $sectionTitleColor, $alpha: 0.5);
+}
+.header__top-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation__list {
+  display: flex;
+  align-items: center;
+}
+.navigation__item + .navigation__item {
+  margin-left: 30px;
+}
+.navigation__item {
+  font-size: 15px;
+  line-height: 100%;
+  font-family: $priceFontConditions;
+}
+.header__content {
+  max-width: 685px;
+  text-align: center;
+}
+.header__content-title {
+  font-size: 90px;
+  line-height: 100%;
+  font-family: $titleFont;
+  margin-bottom: 45px;
+}
+.header__content-text {
+  font-size: 26px;
+  line-height: 140%;
+  margin-bottom: 45px;
+  span {
+    font-size: 28px;
+    font-style: oblique;
+    font-weight: bold;
+    font-family: $priceFontTitle;
+    position: relative;
+    line-height: 0;
+    border-bottom: 1px solid;
+    img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -35px;
+    }
+  }
+}
+.header__content-btn {
+  padding: 24px 52px;
+  font-family: $mainFontBold;
+  font-size: 15px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $sectionTitleColor;
+}
+.header__bottom {
+  width: 100%;
+  margin-left: 70px;
+  padding-top: 45px;
+  position: relative;
+  width: calc(100% - 70px);
+  &::before {
+    content: "Вы получаете";
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 100%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  &::after {
+    content: "*Турция";
+    position: absolute;
+    top: 0;
+    right: 70px;
+    line-height: 100%;
+  }
+}
+.header__bottom-wrapper {
+  padding: 24px 0 24px 50px;
+  background-color: rgba($color: $sectionTitleColor, $alpha: 0.5);
+}
+.header__bottom-list {
+  display: flex;
+}
+.header__bottom-item + .header__bottom-item {
+  padding-left: 72px;
+  margin-left: 50px;
+  border-left: 1px solid rgba($color: $mainColor, $alpha: 0.2);
+}
+.header__bottom-item {
+  padding: 25px 30px 25px 0;
+  display: flex;
+
+  svg {
+    margin-right: 30px;
+  }
+}
+// BEGIN WORK
+.work {
+  text-align: center;
+  padding: 80px 80px 70px;
+}
+.work__filters-wrapper {
+  margin-top: 40px;
+}
+.worck__filters-list {
+  display: flex;
+  justify-content: center;
+}
+.work__filters-item + .work__filters-item {
+  margin-left: 20px;
+}
+.work__filters-item {
+  font-family: $mainFontBold;
+  box-shadow: 0 0 0 1px #e9e9e9;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  font-size: 15px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $sectionTitleColor;
+  position: relative;
+  &:hover {
+    background: linear-gradient(
+        114.44deg,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0.1) 100%
+      ),
+      $sectionSubTitleColor;
+    box-shadow: none;
+  }
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(
+        110.82deg,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0.1) 100%
+      ),
+      $sectionSubTitleColor;
+    height: 90px;
+    width: 50px;
+    filter: blur(40px);
+  }
+}
+
+// END WORK
+// BEGIN HEADER
+
+// END HEADER
+// BEGIN HEADER
+
+// END HEADER
+// BEGIN HEADER
+
+// END HEADER
+// BEGIN HEADER
+
+// END HEADER
+// BEGIN HEADER
+
+// END HEADER
+// BEGIN HEADER
+
+// END HEADER
+// BEGIN HEADER
+
+// END HEADER
