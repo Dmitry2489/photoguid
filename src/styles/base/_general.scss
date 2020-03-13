@@ -30,6 +30,10 @@ button {
   outline: none;
   cursor: pointer;
 }
+input {
+  border: none;
+  outline: none;
+}
 body {
   color: $mainColor;
   font-family: $mainFont;

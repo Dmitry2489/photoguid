@@ -22,6 +22,7 @@
       <div class="header__parallax-background"></div>
       <!--Header top start-->
       <div class="header__top">
+        <div class="header__top-noise"></div>
         <div class="header__top-wrapper">
           <div class="header__logo-wrapper">
             <div class="header__logo">
@@ -54,13 +55,14 @@
           Фотосессия<br />
           в Турции
         </h1>
-        <p class="header__content-text">
-          по цене 7000 рублей за 100 фотографий <br />
-          и 10 одноминутных видео для
-          <span
-            >Instagram <img src="./../img/svg/insta.svg" alt="Instagram icon"
-          /></span>
-        </p>
+        <div>
+          <p class="header__content-text">
+            по цене 7000 рублей за 100 фотографий и 10 одноминутных видео для
+            <span
+              >Instagram <img src="./../img/svg/insta.svg" alt="Instagram icon"
+            /></span>
+          </p>
+        </div>
         <button class="header__content-btn">Связаться с фотографом</button>
       </div>
       <!--Header content end-->
@@ -330,11 +332,13 @@
     <!-- BEGIN TEAM -->
     <section class="team">
       <div class="team__box-video">
-        <img class="text__rot" src="./../img/svg/stamp.svg" alt="text rot" />
-        <img class="icon-play" src="./../img/svg/icon-play.svg" alt=" play" />
+        <div class="box-video__icon-wrapper">
+          <img class="text__rot" src="./../img/svg/stamp.svg" alt="text rot" />
+          <img class="icon-play" src="./../img/svg/icon-play.svg" alt=" play" />
+        </div>
       </div>
       <div class="team__box-text-wrapper">
-        <h3 class="sub-title">услуги и цены</h3>
+        <h3 class="sub-title">Наша команда</h3>
         <p class="team__box-title">
           Посмотрите 2-минутное видео о нас, чтобы лучше понять, как проходят
           наши фотосессии
@@ -356,14 +360,44 @@
     </section>
     <!-- END TEAM -->
     <!-- BEGIN REVIEWS -->
-    <section class="reviews">
+    <!-- <section class="reviews">
       <h3 class="sub-title">отзывы</h3>
       <h6 class="reviews__title">
-        Узнайте, что пишут о нас наши клиенты в своих Instagram аккаунтах
+        Узнайте, что пишут о нас наши клиенты<br />
+        в своих
+        <span
+          >Instagram <img src="./../img/svg/insta.svg" alt="Instagram icon"
+        /></span>
+        аккаунтах
       </h6>
-    </section>
+      <div class="reviews__slider-wrapper">
+        <div class="reviews__slider">
+          <div class="reviews__slider-item">
+            <div class="slider-item__wrapper">
+              <div class="item__wrapper-photo">
+                <img src="./../img/photo-autor.jpg" alt="photo autor" />
+              </div>
+              <div class="item__wrapper-text">
+                <div class="item__title">Просто восторг!</div>
+                <div class="item__text">
+                  Анталия, берег средиземного моря! Получила массу удовольствия
+                  от фотосесси с ребятами из photiguide.biz Спасибо! Получила
+                  массу удовольствия от фотосессии! Всех подруг отправляю к вам!
+                </div>
+                <div class="item__text-autor">
+                  <img
+                    src="./../img/svg/insta-icon-revi.svg"
+                    alt="icon instagram"
+                  />
+                  @Masha_Sharapova
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
     <!-- END REVIEWS  -->
-
     <!-- BEGIN CONTACT -->
     <section class="contact">
       <h3 class="sub-title">Контакты</h3>
@@ -391,6 +425,29 @@
           ><img src="./../img/svg/vk-icon.svg" alt="icon vk"
         /></a>
       </div>
+
+      <div class="contact__form-inner">
+        <h6 class="contact__form-title">Или оставьте данные и мы перезвоним</h6>
+        <form class="contact__form">
+          <div class="form__input-inner">
+            <label class="label-name">Введите Имя</label>
+            <input class="input-name" required type="text" />
+          </div>
+          <div class="form__input-inner">
+            <label class="label-tel">Введите Телефон</label>
+            <input class="input-tel" required type="tel" />
+          </div>
+
+          <div class="form__input-inner">
+            <label class="label-commit">Оставьте Комментарий</label>
+            <input class="input-commit" type="text" />
+          </div>
+          <div class="form__btn-inner">
+            <button>Отправить заявку</button>
+          </div>
+        </form>
+      </div>
+
       <p class="text-policy">
         Пользуясь сайтом photoguide.biz и оставляя заявку Вы соглашаетесь с
         <a href="#">Политикой конфиденциальности</a> нашей компании. Мы
