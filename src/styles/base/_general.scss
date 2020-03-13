@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $mainColor;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+body {
+  color: $mainColor;
+  font-family: $mainFont;
+  font-size: 18px;
+}
+.sub-title {
+  font-family: $mainFontBold;
+  line-height: 100%;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+  color: $sectionSubTitleColor;
+}
+.title {
+  font-family: $titleFont;
+  font-size: 42px;
+  line-height: 100%;
+  color: $sectionTitleColor;
+}
+.container {
+  @include container();
+  @include sm(max-width, rem(510));
+  @include md(max-width, rem(690));
+  @include lg(max-width, rem(930));
+  @include xl(max-width, rem(1110));
+}
