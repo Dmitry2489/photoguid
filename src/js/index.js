@@ -1,4 +1,6 @@
 import "./import/modules";
+import "./import/slick.min.js";
+import $ from "jquery";
 (function() {
   // Elements UI
   const header = document.querySelector(".header");
@@ -30,12 +32,31 @@ import "./import/modules";
   }
   // Form contact label animation
   function onInputNameClick() {
-    labelName.classList.add("lable-top");
+    labelName.classList.add("label-top");
   }
   function onInputTelClick() {
-    labelTel.classList.add("lable-top");
+    labelTel.classList.add("label-top");
   }
   function onInputCommitClick() {
-    labelCommit.classList.add("lable-top");
+    labelCommit.classList.add("label-top");
   }
 })();
+
+$(".reviews__slider").slick({
+  nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
+  slidesToShow: 1,
+  prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
+  infinite: false
+});
+// $("#video__play").click(function() {
+//   var dataYoutube = $(this)
+//     .parents(".js-video")
+//     .attr("data-youtube");
+//   $(this)
+//     .parents(".js-video")
+//     .html(
+//       '<iframe src="https://www.youtube.com/embed/' +
+//         dataYoutube +
+//         '?autoplay=1" frameborder="0" allowfullscreen></iframe>'
+//     );
+// });
