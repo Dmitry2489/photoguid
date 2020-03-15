@@ -10,11 +10,14 @@ import $ from "jquery";
   const labelName = document.querySelector(".label-name");
   const labelTel = document.querySelector(".label-tel");
   const labelCommit = document.querySelector(".label-commit");
+  const headerBtnMenu = document.querySelector(".header__btn-menu");
+  const headerMenuNavigation = document.querySelector(".header__navigation");
   // Events
   header.addEventListener("mousemove", parallax);
   inputName.addEventListener("click", onInputNameClick);
   inputTel.addEventListener("click", onInputTelClick);
   inputCommit.addEventListener("click", onInputCommitClick);
+  headerBtnMenu.addEventListener("click", onHeaderBtnMenuClick);
 
   // Parallax header
   function parallax(event) {
@@ -40,6 +43,12 @@ import $ from "jquery";
   function onInputCommitClick() {
     labelCommit.classList.add("label-top");
   }
+
+  //Burger menu
+  function onHeaderBtnMenuClick() {
+    headerBtnMenu.classList.toggle("burger");
+    headerMenuNavigation.classList.toggle("menu_open_state");
+  }
 })();
 
 $(".reviews__slider").slick({
@@ -48,15 +57,15 @@ $(".reviews__slider").slick({
   prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
   infinite: false
 });
-// $("#video__play").click(function() {
-//   var dataYoutube = $(this)
-//     .parents(".js-video")
-//     .attr("data-youtube");
-//   $(this)
-//     .parents(".js-video")
-//     .html(
-//       '<iframe src="https://www.youtube.com/embed/' +
-//         dataYoutube +
-//         '?autoplay=1" frameborder="0" allowfullscreen></iframe>'
-//     );
-// });
+$("#video__play").click(function() {
+  var dataYoutube = $(this)
+    .parents(".js-video")
+    .attr("data-youtube");
+  $(this)
+    .parents(".js-video")
+    .html(
+      '<iframe src="https://www.youtube.com/embed/' +
+        dataYoutube +
+        '?autoplay=1" frameborder="0" allowfullscreen></iframe>'
+    );
+});
