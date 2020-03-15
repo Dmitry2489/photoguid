@@ -189,6 +189,12 @@
 .header__bottom-wrapper {
   padding: 24px 0 24px 50px;
   background-color: rgba($color: $sectionTitleColor, $alpha: 0.5);
+  
+  .header__top-noise {
+    bottom: 0;
+    height: 74%;
+    top: auto;
+  }
 }
 .header__bottom-list {
   display: flex;
@@ -512,6 +518,9 @@
     transform: rotate(0deg);
   }
 }
+.team__box-text-wrapper div {
+  position: relative;
+}
 .team__box-text-wrapper {
   width: 46%;
   padding: 80px 70px 80px 80px;
@@ -529,7 +538,14 @@
   //   filter: url(#blur);
   //   filter: blur(10px);
   //   z-index: 1;
+  background-image: linear-gradient(
+      180deg,
+      rgba(48, 48, 48, 0.4),
+      rgba(48, 48, 48, 0.4)
+    ),
+    url(https://uploads-ssl.webflow.com/5d04bef…/5d04bef…_hero-bg.jpg);
   .header__top-noise {
+    z-index: 1;
   }
 }
 .team__box-title {

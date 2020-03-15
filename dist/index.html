@@ -13,6 +13,10 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/js/jquery.swipebox.min.js"
+    />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
@@ -182,12 +186,13 @@
           <li class="work__filters-item">Glamour</li>
         </ul>
       </div>
+
       <div class="work__portfolio-wrapper">
         <div
           class="work__portfolio-item"
           style="background-image: url(img/works1.jpg);"
         >
-          <a href="#"
+          <a href="#" class="swipebox"
             ><img src="img/svg/icon_work-item.svg" alt="" /><span
               >Увеличить</span
             ></a
@@ -197,7 +202,7 @@
           class="work__portfolio-item"
           style="background-image: url(img/works2.jpg);"
         >
-          <a href="#"
+          <a href="#" class="swipebox"
             ><img src="img/svg/icon_work-item.svg" alt="" /><span
               >Увеличить</span
             ></a
@@ -207,7 +212,7 @@
           class="work__portfolio-item"
           style="background-image: url(img/works3.jpg);"
         >
-          <a href="#"
+          <a href="#" class="swipebox"
             ><img src="img/svg/icon_work-item.svg" alt="" /><span
               >Увеличить</span
             ></a
@@ -217,7 +222,7 @@
           class="work__portfolio-item"
           style="background-image: url(img/works4.jpg);"
         >
-          <a href="#"
+          <a href="#" class="swipebox"
             ><img src="img/svg/icon_work-item.svg" alt="" /><span
               >Увеличить</span
             ></a
@@ -349,24 +354,28 @@
       </div>
       <div class="team__box-text-wrapper">
         <div class="header__top-noise"></div>
-        <h3 class="sub-title">Наша команда</h3>
-        <p class="team__box-title">
-          Посмотрите 2-минутное видео о нас, чтобы лучше понять, как проходят
-          наши фотосессии
-        </p>
-        <p class="team__box-text">
-          Делаем так, чтобы воспоминания об отдыхе остались у вас на всю жизнь.
-          Для этого заранее продумываем сюжет и подбираем интересные геолокации.
-          <span class="team__color-text">Наша цель </span> - создавать
-          атмосферные фотографии, которые передают сюжет и рассказывают историю.
-        </p>
-        <p class="team__box-text">
-          Ладим с детьми, знаем уникальные места вблизи Анталии, помогаем
-          позировать, умеем смешить и ловить мгновения.На наших фотографиях вы
-          будете выглядеть естественно красиво, даже если это ваша первая
-          съемка. А чтобы убедиться что вам с нами будет комфортно,
-          <strong>посмотрите 2-минутное видео</strong>
-        </p>
+        <div>
+          <h3 class="sub-title">Наша команда</h3>
+          <p class="team__box-title">
+            Посмотрите 2-минутное видео о нас, чтобы лучше понять, как проходят
+            наши фотосессии
+          </p>
+          <p class="team__box-text">
+            Делаем так, чтобы воспоминания об отдыхе остались у вас на всю
+            жизнь. Для этого заранее продумываем сюжет и подбираем интересные
+            геолокации.
+            <span class="team__color-text">Наша цель </span> - создавать
+            атмосферные фотографии, которые передают сюжет и рассказывают
+            историю.
+          </p>
+          <p class="team__box-text">
+            Ладим с детьми, знаем уникальные места вблизи Анталии, помогаем
+            позировать, умеем смешить и ловить мгновения.На наших фотографиях вы
+            будете выглядеть естественно красиво, даже если это ваша первая
+            съемка. А чтобы убедиться что вам с нами будет комфортно,
+            <strong>посмотрите 2-минутное видео</strong>
+          </p>
+        </div>
       </div>
     </section>
     <!-- END TEAM -->

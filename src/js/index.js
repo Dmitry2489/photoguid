@@ -69,3 +69,5 @@ $("#video__play").click(function() {
         '?autoplay=1" frameborder="0" allowfullscreen></iframe>'
     );
 });
+
+$(".swipebox").swipebox();

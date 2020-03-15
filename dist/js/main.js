@@ -1093,6 +1093,7 @@ jquery__WEBPACK_IMPORTED_MODULE_2___default()("#video__play").click(function () 
   var dataYoutube = jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).parents(".js-video").attr("data-youtube");
   jquery__WEBPACK_IMPORTED_MODULE_2___default()(this).parents(".js-video").html('<iframe src="https://www.youtube.com/embed/' + dataYoutube + '?autoplay=1" frameborder="0" allowfullscreen></iframe>');
 });
+jquery__WEBPACK_IMPORTED_MODULE_2___default()(".swipebox").swipebox();
 
 /***/ })
 
